@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetabolsInfo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonte usada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="navbar box_shadow">
+        <div class="div_nav">
+            <img class="logo_navbar" src="img/logo_png.png" alt="">
+            <h1 class="title_navbar">MetabolsInfo</h1>
+        </div>
+    </nav>
+
+    <section class="section_input box_shadow">
+        <h2>Preencha as lacunas abaixo para descobrir algumas informações sobre
+            seu metabolismo.
+        </h2>
+        <div class="div_flex">
+
+            <div class="div_column">
+                <div class="div_input">
+                    <p>altura(m)</p>
+                    <input type="text" id="altura">
+                </div>
+
+                <div class="div_input">
+                    <p>Peso</p>
+                    <input type="text" name="" id="peso">
+                </div>
+
+
+            </div>
+
+            <div class="div_column">
+
+
+                <div class="div_input">
+                    <p>Idade</p>
+                    <input type="number">
+                </div>
+
+                <div class="div_input"> 
+                    <form>
+                        <label for="sexo" style="font-weight: bold;">Sexo:</label><br>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="masculino" name="sexo" value="masculino">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="feminino" name="sexo" value="feminino">
+                    </form>
+                    
+                </div>
+            </div>
+
+
+        </div>
+        <div></div>
+    </section>
+
+    <script>
+        // Função genérica para aplicar máscara de número float
+        function aplicarMascaraFloat(input) {
+            input.addEventListener('input', function () {
+                let valor = this.value;
+
+                // Permite apenas números e um ponto decimal
+                valor = valor.replace(/[^0-9.]/g, '');
+
+                // Verifica se há mais de um ponto decimal
+                const partes = valor.split('.');
+                if (partes.length > 2) {
+                    valor = partes[0] + '.' + partes[1]; // Mantém apenas o primeiro ponto decimal
+                }
+
+                // Limita a quantidade de números decimais (ex: duas casas decimais)
+                if (partes[1] && partes[1].length > 2) {
+                    partes[1] = partes[1].slice(0, 2);
+                    valor = partes[0] + '.' + partes[1];
+                }
+
+                // Atualiza o valor do campo
+                this.value = valor;
+            });
+        }
+
+        // Seleciona os campos de entrada
+        const alturaInput = document.getElementById('altura');
+        const pesoInput = document.getElementById('peso');
+
+        // Aplica a função de máscara para ambos os campos
+        aplicarMascaraFloat(alturaInput);
+        aplicarMascaraFloat(pesoInput);
+
+    </script>
+
+</body>
+
+</html>
