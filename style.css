@@ -1,8 +1,8 @@
 body{margin: 0px; padding: 0px; font-family: inter; color: #33363F; background-color: #E8E8E8;}
 
-.box_shadow{-webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
-             -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
-             box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);}
+.box_shadow{-webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.578);
+             -moz-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.511);
+             box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.444);}
 
 .navbar{ 
     background-color: #ffffff; 
@@ -24,35 +24,77 @@ body{margin: 0px; padding: 0px; font-family: inter; color: #33363F; background-c
     margin: auto;}
 
 .section_input{
-    background-color: #ffffff; 
-    border-radius: 20px;
-    width: 99%; 
-    margin: 10px auto 10px auto;
-
+    width: 100%;   
 }
 
-.div_flex{display: flex;}
 
-.div_input{ margin: auto; display: flex;}
+.div_flex{display: flex; 
+    height: 400px; }
 
-.div_column{display: flex; flex-direction: column;}
+.div_input{ margin: auto 0px auto auto; 
+    display: flex;}
+
+.div_column{display: flex; 
+    flex-direction: column; 
+    margin: auto; 
+    height: 80%;}
 
 /* radios */
 form {
-    font-family: Arial, sans-serif;
+    font-family: Arial, 
+    sans-serif;
     font-size: 16px;
     margin-top: 20px;
 }
 
 label {
     margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 input[type="radio"] {
     margin-right: 5px;
-    accent-color: black; /* Define a cor dos botões de radio */
+    accent-color: black;  /* Define a cor dos botões de radio */
 }
 
 label[for="sexo"] {
     margin-right: 10px;
+    
 }
+
+.input_style{ border: solid #232323 2px; 
+    border-radius: 20px ; 
+    height: 40px; 
+    width: 200px;
+    margin: auto auto auto 20px;}
+
+.div_flex p { font-weight: bold; 
+    font-size: 20px;}
+
+.div_white{  background-color: #ffffff; 
+    border-radius: 20px;
+    width: 90%; 
+    margin: 10px auto 10px auto;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.div_white h2 {font-size: 30px;}
+
+#div_button{text-align: center; width: 100%;}
+
+.div_white button{margin:auto; 
+    font-size: 30px; 
+    background-color: #232323; 
+    color: white; border: none; 
+    border-radius: 10px; 
+    padding: 20px 70px  10px 70px;}
+
+
+#div_imc { text-align: center; 
+    justify-items: center;}
+
+#div_imc h1{ font-size: 70px;}
+
+#imc_box{ background-color: #D9D9D9; width: 150px; height: 70px;}
