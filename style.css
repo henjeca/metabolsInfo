@@ -1,5 +1,7 @@
 body{margin: 0px; padding: 0px; font-family: inter; color: #33363F; background-color: #E8E8E8;}
 
+p{font-size: 35px; color: #33363F; font-weight: bold;}
+
 .box_shadow{-webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.578);
              -moz-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.511);
              box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.444);}
@@ -64,7 +66,7 @@ label[for="sexo"] {
 }
 
 .input_style{ border: solid #232323 2px; 
-    border-radius: 20px ; 
+    border-radius: 10px ; 
     height: 40px; 
     width: 200px;
     margin: auto auto auto 20px;}
@@ -97,4 +99,17 @@ label[for="sexo"] {
 
 #div_imc h1{ font-size: 70px;}
 
-#imc_box{ background-color: #D9D9D9; width: 150px; height: 70px;}
+#imc_box{ background-color: #D9D9D9; 
+    width: 150px; 
+    height: 70px; 
+    border-radius: 10px; 
+    -webkit-box-shadow: inset 0px 7px 17px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 7px 17px -3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 7px 17px -3px rgba(0, 0, 0, 0.509);
+    margin-bottom: 100px;
+}
+
+#imc_box p {color: #33363F;
+    font-size: 40px;
+    font-weight: bold;  padding-top: 10px;}
+
