@@ -27,10 +27,10 @@
 
     <section class="section_input">
 
-        <div class="div_white box_shadow">
-            <h2>Preencha as lacunas abaixo para descobrir algumas informações sobre
+        <div class="div_white box_shadow" id="teste"> 
+            <p>Preencha as lacunas abaixo para descobrir algumas informações sobre
                 seu metabolismo.
-            </h2>
+            </p>
             <div class="div_flex">
     
                 <div class="div_column">
@@ -52,7 +52,7 @@
     
                     <div class="div_input">
                         <p>Idade</p>
-                        <input type="number" class="input_style">
+                        <input type="number" class="input_style" id="idade">
                     </div>
     
                     <div class="div_input"> 
@@ -70,58 +70,177 @@
     
             </div>
             <div id="div_button">
-                <button>Enviar</button>
+                <button id="calcular"  type="submit">Enviar</button>
             </div>
             
 
         </div>
 
-       
-        <div class="div_white" id="div_imc">
+     <section id="sectionDisplay">
+
+        <div class="div_white div_align box_shadow" >
             <h1>IMC</h1>
 
-            <div id="imc_box">
-                <p>00.00</p>               
+            <div class="box_info" >
+                <p id="imcResultado">00.00</p>               
             </div>
 
-            <p>Seu IMC é 00.00 e esta **** do normal!</p>
+            <p id="imcTexto">Seu IMC é 00.00 e esta **** do normal!</p>
 
         </div>
+
+        <div class="div_white div_align box_shadow">
+            <h1>Metabolismo basal</h1>
+
+            <div class="box_info">
+                <p id="metabolismoTexto">0000 Kcal</p>               
+            </div>
+
+            <p id="metaParagrafo">A taxa metabólica basal (TMB) é a quantidade de energia necessária para a manutenção das funções vitais do organismo ao longo de 24 horas. Ela é medida em calorias, que é a energia extraída pelo nosso corpo a partir dos macronutrientes (carboidratos, proteínas e gorduras totais).</p>
+
+        </div>
+
+        <div class="div_white div_align box_shadow" id="div_hip">
+            <h1>Ingestão calórica recomendada</h1>
+
+            <p>A quantidade de calorias recomendadas para cada pessoa varia de acordo com diversos fatores, como idade, sexo, peso, atividade física, doenças e taxa metabólica. A Organização Mundial da Saúde (OMS) indica que um adulto saudável deve consumir entre 2.000 e 2.400 calorias por dia. Lembre-se de contar sempre com a ajuda de um profissional.</p>
+
+            <h1>Ingestão para Hipertrofia</h1>
+
+            <p>As informações abaixo se referem a ingestão de macronutrientes aproximada recomendada para ganho de massa muscular na musculação(Procure sempre um profissional antes)</p>
+
+            <section id="section_macros">
+
+                <div class="div_macros">
+               
+                    <h1>proteínas</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="proteinas">000g</p> </div>
+                    </section>
+                    
+                </div>
+                
+                <div class="div_macros">
+                   
+                    <h1>Carboidrados</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="carboidratos">000g</p> </div>
+                    </section>
+                    
+                </div>
+    
+                <div class="div_macros">
+                   
+                    <h1>Gorduras</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="gorduras">0000g</p> </div>
+                    </section>
+                    
+                </div>
+
+            </section>
+            
+
+        </div>
+
+        <div class="div_white div_align box_shadow" >
+            <h1>Perdas de caloria do exercício</h1>
+
+            <p>Com base em 30 minutos de duração de atividade moderada e seu peso atual.</p>
+
+            <section id="section_macros">
+
+                <div class="div_macros">
+               
+                    <h1 >Ciclismo</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="ciclismo">000</p> </div>
+                    </section>
+                    
+                </div>
+                
+                <div class="div_macros">
+                   
+                    <h1>Caminhada</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="caminhada">000</p> </div>
+                    </section>
+                    
+                </div>
+    
+                <div class="div_macros">
+                   
+                    <h1>Tênis</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="tenis">000</p> </div>
+                    </section>
+                    
+                </div>
+
+                <div class="div_macros">
+                   
+                    <h1>Boxe</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="boxe">000</p> </div>
+                    </section>
+                    
+                </div>
+
+                <div class="div_macros">
+                   
+                    <h1>Aeróbica</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="aerobica">000</p> </div>
+                    </section>
+                    
+                </div>
+
+                <div class="div_macros">
+                   
+                    <h1>Futebol</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="futebol">000</p> </div>
+                    </section>
+                    
+                </div>
+
+                <div class="div_macros">
+                   
+                    <h1>Basquete</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="basquete">000</p> </div>
+                    </section>
+                    
+                </div>
+
+                <div class="div_macros">
+                   
+                    <h1>Natação</h2>  
+                              
+                    <section>
+                        <div class="box_info"> <p id="natacao">000</p> </div>
+                    </section>
+                    
+                </div>
+
+            </section>
+        </div>
+
+     </section>
+     
     </section>
 
-    <script>
-        // Função genérica para aplicar máscara de número float
-        function aplicarMascaraFloat(input) {
-            input.addEventListener('input', function () {
-                let valor = this.value;
-
-                // Permite apenas números e um ponto decimal
-                valor = valor.replace(/[^0-9.]/g, '');
-
-                // Verifica se há mais de um ponto decimal
-                const partes = valor.split('.');
-                if (partes.length > 2) {
-                    valor = partes[0] + '.' + partes[1]; // Mantém apenas o primeiro ponto decimal
-                }
-
-                // Limita a quantidade de números decimais (ex: duas casas decimais)
-                if (partes[1] && partes[1].length > 2) {
-                    partes[1] = partes[1].slice(0, 2);
-                    valor = partes[0] + '.' + partes[1];
-                }
-
-                // Atualiza o valor do campo
-                this.value = valor;
-            });
-        }
-
-        // Seleciona os campos de entrada
-        const alturaInput = document.getElementById('altura');
-        const pesoInput = document.getElementById('peso');
-
-        // Aplica a função de máscara para ambos os campos
-        aplicarMascaraFloat(alturaInput);
-        aplicarMascaraFloat(pesoInput);
+    <script src="./script.js">
 
     </script>
 
